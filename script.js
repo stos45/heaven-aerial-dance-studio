@@ -39,8 +39,8 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach((el) => revealObserver.observe(el));
 
-document.querySelectorAll('.pricing-item, .schedule-day').forEach((item) => {
-  const header = item.querySelector('.pricing-item-header, .schedule-day-header');
+document.querySelectorAll('.pricing-item').forEach((item) => {
+  const header = item.querySelector('.pricing-item-header');
   header.addEventListener('click', () => {
     const isOpen = item.classList.toggle('open');
     header.setAttribute('aria-expanded', String(isOpen));
