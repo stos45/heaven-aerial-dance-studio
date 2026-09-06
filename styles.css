@@ -159,9 +159,9 @@ em { font-style: normal; color: var(--ink); font-weight: 500; }
 .hero-sky {
   position: absolute;
   inset: -5%;
-  background-image: url('zdj/cloud-sky.jpg');
+  background-image: url('zdj/tło.jpg');
   background-size: cover;
-  background-position: 50% 40%;
+  background-position: 50% 30%;
   pointer-events: none;
   animation: skyDrift 100s ease-in-out infinite alternate;
 }
