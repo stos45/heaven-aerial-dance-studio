@@ -387,41 +387,94 @@ section { padding: 110px 0; }
 }
 
 /* Pricing */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 50px;
+.pricing-intro {
+  max-width: 560px;
+  margin: 0 auto 46px;
 }
+
+.price-featured {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 40px 44px;
+  margin-bottom: 40px;
+  box-shadow: 0 24px 50px rgba(38, 38, 38, 0.18);
+}
+.price-featured .eyebrow { color: rgba(255, 255, 255, 0.6); }
+.price-featured h3 { color: #fff; font-size: 1.6rem; margin-bottom: 10px; }
+.price-featured-text p { color: rgba(255, 255, 255, 0.75); max-width: 440px; }
+.price-featured-buy { text-align: right; flex-shrink: 0; }
+.price-featured-buy .price { color: #fff; margin-bottom: 6px; }
+.price-featured-buy .price-meta { color: rgba(255, 255, 255, 0.65); margin-bottom: 18px; }
+.price-featured-buy .btn-primary { background: #fff; color: var(--ink); }
+.price-featured-buy .btn-primary:hover { box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2); }
+
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.pricing-tab {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.pricing-tab:hover { border-color: rgba(38, 38, 38, 0.3); color: var(--ink); }
+.pricing-tab.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.pricing-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 22px;
+}
+.pricing-grid.active { display: grid; }
+
 .price-card {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 40px 30px;
-  text-align: center;
+  padding: 28px 24px;
   box-shadow: 0 12px 30px rgba(38, 38, 38, 0.04);
 }
-.price-card.featured {
-  border-color: rgba(38, 38, 38, 0.3);
-  transform: scale(1.04);
-  box-shadow: 0 24px 50px rgba(38, 38, 38, 0.1);
-}
-.price-card h3 { font-size: 1.15rem; margin-bottom: 12px; }
+.price-card h3 { font-size: 1.05rem; margin-bottom: 10px; }
 .price {
   font-family: var(--serif);
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   color: var(--ink);
-  margin-bottom: 20px;
 }
-.price-card ul {
-  list-style: none;
-  margin-bottom: 26px;
+.price-card.small .price { margin-bottom: 6px; }
+.price-meta {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 10px;
 }
-.price-card li {
-  padding: 6px 0;
-  font-size: 0.9rem;
+.price-desc { font-size: 0.88rem; }
+
+.price-note-box {
+  margin-top: 40px;
+  padding: 22px 26px;
+  border: 1px dashed rgba(38, 38, 38, 0.25);
+  border-radius: var(--radius);
+  font-size: 0.92rem;
   color: var(--muted);
 }
+.price-note-box strong { color: var(--ink); }
+
+.table-note a { color: var(--ink); }
 
 /* Instructors */
 .instructors-grid {
@@ -610,10 +663,14 @@ section { padding: 110px 0; }
   .hero-sub { margin: 0 auto 36px; }
   .hero-actions { justify-content: center; }
   .hero-photo { order: -1; max-width: 360px; margin: 0 auto; aspect-ratio: 4/3; }
-  .classes-grid, .pricing-grid, .instructors-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
-  .price-card.featured { transform: none; }
+  .classes-grid, .instructors-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid.active { grid-template-columns: repeat(2, 1fr); }
+  .price-featured { flex-direction: column; text-align: center; gap: 24px; }
+  .price-featured-text p { margin: 0 auto; }
+  .price-featured-buy { text-align: center; }
 }
 @media (max-width: 560px) {
-  .classes-grid, .pricing-grid, .instructors-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .classes-grid, .instructors-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .pricing-grid.active { grid-template-columns: 1fr; }
   section { padding: 70px 0; }
 }
