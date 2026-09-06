@@ -25,7 +25,7 @@ const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
 onScroll();
 window.addEventListener('scroll', onScroll, { passive: true });
 
-const revealEls = document.querySelectorAll('.reveal');
+const revealEls = document.querySelectorAll('.reveal, .section-divider');
 revealEls.forEach((el, i) => {
   el.style.transitionDelay = `${(i % 4) * 90}ms`;
 });
