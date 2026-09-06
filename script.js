@@ -39,14 +39,11 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach((el) => revealObserver.observe(el));
 
-const pricingTabs = document.querySelectorAll('.pricing-tab');
-const pricingGrids = document.querySelectorAll('.pricing-grid');
-pricingTabs.forEach((tab) => {
-  tab.addEventListener('click', () => {
-    pricingTabs.forEach((t) => t.classList.remove('active'));
-    pricingGrids.forEach((g) => g.classList.remove('active'));
-    tab.classList.add('active');
-    document.querySelector(`.pricing-grid[data-cat="${tab.dataset.cat}"]`).classList.add('active');
+document.querySelectorAll('.pricing-item').forEach((item) => {
+  const header = item.querySelector('.pricing-item-header');
+  header.addEventListener('click', () => {
+    const isOpen = item.classList.toggle('open');
+    header.setAttribute('aria-expanded', String(isOpen));
   });
 });
 
