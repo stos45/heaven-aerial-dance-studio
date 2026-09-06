@@ -293,7 +293,7 @@ em { font-style: normal; color: var(--ink); font-weight: 500; }
   justify-content: center;
   gap: 18px;
   max-width: 220px;
-  margin: 0 auto;
+  margin: 44px auto;
   padding: 0 24px;
   opacity: 0;
   transform: scale(0.8);
