@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 <link rel="icon" type="image/png" href="zdj/favicon.png">
 <link rel="icon" href="zdj/favicon.ico">
 <link rel="apple-touch-icon" href="zdj/favicon.png">
@@ -145,47 +145,107 @@
   <div class="container">
     <p class="eyebrow center">Plan zajęć</p>
     <h2 class="center">Grafik tygodniowy</h2>
-    <div class="table-wrap reveal">
-      <table class="schedule-table">
-        <thead>
-          <tr>
-            <th>Godzina</th>
-            <th>Poniedziałek</th>
-            <th>Wtorek</th>
-            <th>Środa</th>
-            <th>Czwartek</th>
-            <th>Piątek</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>17:00–18:00</td>
-            <td>Silks – Start</td>
-            <td>Pole – Start</td>
-            <td>Hoop – Start</td>
-            <td>Stretching</td>
-            <td>Silks – Start</td>
-          </tr>
-          <tr>
-            <td>18:15–19:15</td>
-            <td>Pole – Progres</td>
-            <td>Silks – Progres</td>
-            <td>Pole – Progres</td>
-            <td>Hoop – Progres</td>
-            <td>Open Class</td>
-          </tr>
-          <tr>
-            <td>19:30–20:30</td>
-            <td>Hoop – Zaawans.</td>
-            <td>Stretching</td>
-            <td>Silks – Zaawans.</td>
-            <td>Pole – Zaawans.</td>
-            <td>—</td>
-          </tr>
-        </tbody>
-      </table>
+    <p class="pricing-intro center">Aktualny plan zajęć grupowych — kliknij dzień, żeby zobaczyć godziny, poziomy i trenerów.</p>
+
+    <div class="schedule-accordion">
+      <div class="schedule-day open reveal">
+        <button class="schedule-day-header" aria-expanded="true">
+          <span class="schedule-day-title">Poniedziałek</span>
+          <span class="schedule-day-count">5 zajęć</span>
+          <span class="pricing-item-icon" aria-hidden="true"></span>
+        </button>
+        <div class="schedule-day-panel">
+          <div class="schedule-day-panel-inner">
+            <ul class="schedule-list">
+              <li><span class="schedule-time">16:00–17:00</span><span class="schedule-name">Aerial Hoop KIDS — kontynuacja</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">17:05–18:05</span><span class="schedule-name">Aerial Silks KIDS — kontynuacja</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">18:20–19:20</span><span class="schedule-name">Aerial Hoop BASIC — nowy nabór</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">19:30–20:30</span><span class="schedule-name">Aerial Hoop — triki i combosy</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">20:40–21:40</span><span class="schedule-name">Akrobatyka</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Filip Adamczewski</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-day reveal">
+        <button class="schedule-day-header" aria-expanded="false">
+          <span class="schedule-day-title">Wtorek</span>
+          <span class="schedule-day-count">5 zajęć</span>
+          <span class="pricing-item-icon" aria-hidden="true"></span>
+        </button>
+        <div class="schedule-day-panel">
+          <div class="schedule-day-panel-inner">
+            <ul class="schedule-list">
+              <li><span class="schedule-time">16:00–17:00</span><span class="schedule-name">Aerial Hoop KIDS — początkujący</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">17:00–18:00</span><span class="schedule-name">Aerial Hoop KIDS — kontynuacja</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">18:10–19:10</span><span class="schedule-name">Aerial Hoop Advanced</span><span class="schedule-level">Zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">19:15–20:15</span><span class="schedule-name">Aerial Hoop Intermediate</span><span class="schedule-level">Średniozaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">20:20–21:20</span><span class="schedule-name">Aerial Hoop BASIC — nowy nabór</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-day reveal">
+        <button class="schedule-day-header" aria-expanded="false">
+          <span class="schedule-day-title">Środa</span>
+          <span class="schedule-day-count">7 zajęć</span>
+          <span class="pricing-item-icon" aria-hidden="true"></span>
+        </button>
+        <div class="schedule-day-panel">
+          <div class="schedule-day-panel-inner">
+            <ul class="schedule-list">
+              <li><span class="schedule-time">10:00–11:00</span><span class="schedule-name">Aerial Hoop — OPEN level</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">11:10–12:10</span><span class="schedule-name">Open Studio</span><span class="schedule-level">Wszystkie poziomy</span><span class="schedule-coach">—</span></li>
+              <li><span class="schedule-time">16:00–17:00</span><span class="schedule-name">Aerial Silks Mini (6–8 lat)</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">17:00–18:00</span><span class="schedule-name">Aerial Silks KIDS — kontynuacja</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">18:00–19:00</span><span class="schedule-name">Aerial Silks Intermediate</span><span class="schedule-level">Średniozaawansowany</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">19:00–20:00</span><span class="schedule-name">Aerial Silks Basic</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">20:10–21:10</span><span class="schedule-name">Aerial Hoop — Spin Choreo</span><span class="schedule-level">Średniozaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-day reveal">
+        <button class="schedule-day-header" aria-expanded="false">
+          <span class="schedule-day-title">Czwartek</span>
+          <span class="schedule-day-count">6 zajęć</span>
+          <span class="pricing-item-icon" aria-hidden="true"></span>
+        </button>
+        <div class="schedule-day-panel">
+          <div class="schedule-day-panel-inner">
+            <ul class="schedule-list">
+              <li><span class="schedule-time">15:00–16:00</span><span class="schedule-name">Aerial Silks Mini (4–5 lat)</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">16:00–17:00</span><span class="schedule-name">Aerial Silks KIDS 9+ — nowy nabór</span><span class="schedule-level">Początkujący</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">17:00–18:00</span><span class="schedule-name">Aerial Silks KIDS — kontynuacja</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">18:00–19:00</span><span class="schedule-name">Aerial Silks — Choreo</span><span class="schedule-level">Średniozaawansowany</span><span class="schedule-coach">Monika Norek</span></li>
+              <li><span class="schedule-time">19:10–20:10</span><span class="schedule-name">Aerial Hamak</span><span class="schedule-level">Wszystkie poziomy</span><span class="schedule-coach">Julia Henich</span></li>
+              <li><span class="schedule-time">20:15–21:15</span><span class="schedule-name">Aerial Hoop — OPEN level</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-day reveal">
+        <button class="schedule-day-header" aria-expanded="false">
+          <span class="schedule-day-title">Piątek</span>
+          <span class="schedule-day-count">3 zajęcia</span>
+          <span class="pricing-item-icon" aria-hidden="true"></span>
+        </button>
+        <div class="schedule-day-panel">
+          <div class="schedule-day-panel-inner">
+            <ul class="schedule-list">
+              <li><span class="schedule-time">16:20–17:20</span><span class="schedule-name">Aerial Hoop KIDS — kontynuacja</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Piotr Kapłaniuk</span></li>
+              <li><span class="schedule-time">17:30–18:30</span><span class="schedule-name">Aerial Hoop — triki i combosy</span><span class="schedule-level">Średniozaawansowany i zaawansowany</span><span class="schedule-coach">Julia Palczewska</span></li>
+              <li><span class="schedule-time">18:35–20:05</span><span class="schedule-name">Aerial Hoop — grupa zawodnicza (zamknięta)</span><span class="schedule-level">Zaawansowany</span><span class="schedule-coach">Julia Palczewska</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="table-note">Przykładowy grafik — do podmiany na aktualny plan zajęć.</p>
+
+    <p class="table-note">Weekend zwykle bez zajęć grupowych — sprawdź jednak system rezerwacji, terminy mogą się pojawiać. Pełny, zawsze aktualny grafik i zapisy online: <a href="https://app.fitssey.com/Heaven/frontoffice" target="_blank" rel="noopener">app.fitssey.com/Heaven</a>.</p>
   </div>
 </section>
 
@@ -577,6 +637,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=12"></script>
+<script src="script.js?v=13"></script>
 </body>
 </html>
