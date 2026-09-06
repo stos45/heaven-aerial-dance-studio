@@ -99,15 +99,15 @@ em { font-style: normal; color: var(--ink); font-weight: 500; }
 }
 .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .logo-img {
-  height: 48px;
-  width: 48px;
+  height: 60px;
+  width: 60px;
   display: block;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 .logo:hover .logo-img { transform: rotate(8deg) scale(1.05); }
-.logo-wordmark { height: 16px; width: auto; display: block; }
+.logo-wordmark { height: 20px; width: auto; display: block; }
 .nav {
   display: flex;
   gap: 28px;
@@ -193,14 +193,10 @@ em { font-style: normal; color: var(--ink); font-weight: 500; }
 }
 .hero-text { text-align: left; }
 .hero-logo {
-  height: 96px;
-  width: 96px;
-  margin: 0 0 24px;
+  height: 64px;
+  width: auto;
+  margin: 0 0 28px;
   display: block;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 16px 40px rgba(38, 38, 38, 0.1);
-  border: 1px solid var(--line);
 }
 .hero h1 {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
