@@ -623,6 +623,12 @@ section { padding: 110px 0; }
   gap: 28px;
   margin-top: 50px;
 }
+.testimonials-grid.two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .testimonial-card {
   background: #ffffff;
   border: 1px solid var(--line);
@@ -762,6 +768,7 @@ section { padding: 110px 0; }
 }
 @media (max-width: 560px) {
   .classes-grid, .instructors-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .testimonials-grid.two { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   section { padding: 70px 0; }
   .pricing-item-count { display: none; }
