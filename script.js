@@ -46,11 +46,3 @@ document.querySelectorAll('.pricing-item').forEach((item) => {
     header.setAttribute('aria-expanded', String(isOpen));
   });
 });
-
-const form = document.getElementById('contact-form');
-const status = document.getElementById('form-status');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  status.textContent = 'Dziękujemy! Wiadomość została przygotowana do wysłania (podłącz backend/formspree, aby faktycznie ją wysyłać).';
-  form.reset();
-});
