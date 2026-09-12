@@ -675,14 +675,24 @@ section { padding: 110px 0; }
 .contact-info ul { list-style: none; margin: 24px 0; }
 .contact-info li { margin-bottom: 10px; font-size: 0.95rem; color: var(--muted); }
 .contact-info strong { color: var(--ink); }
-.socials { display: flex; gap: 20px; }
-.socials a {
+.socials { display: flex; gap: 14px; }
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
   color: var(--ink);
-  text-decoration: none;
-  font-size: 0.9rem;
-  border-bottom: 1px solid transparent;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
-.socials a:hover { border-color: var(--ink); }
+.social-icon svg { width: 19px; height: 19px; }
+.social-icon:hover {
+  background: var(--ink);
+  color: #fff;
+  transform: translateY(-2px);
+}
 
 .contact-form {
   display: flex;
