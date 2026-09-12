@@ -783,7 +783,7 @@ section { padding: 110px 0; }
   .hero-logo { margin-left: auto; margin-right: auto; }
   .hero-sub { margin: 0 auto 36px; }
   .hero-actions { justify-content: center; }
-  .hero-photo { order: -1; max-width: 360px; margin: 0 auto; aspect-ratio: 4/3; }
+  .hero-photo { max-width: 320px; margin: 40px auto 0; aspect-ratio: 4/3; }
   .classes-grid, .instructors-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
   .pricing-grid { grid-template-columns: repeat(2, 1fr); }
   .price-featured { flex-direction: column; text-align: center; gap: 24px; }
