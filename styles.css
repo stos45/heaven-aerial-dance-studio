@@ -139,6 +139,8 @@ em { font-style: normal; color: var(--ink); font-weight: 500; }
   background: none;
   border: none;
   cursor: pointer;
+  padding: 14px;
+  margin: -14px;
 }
 .burger span {
   width: 24px;
@@ -768,8 +770,9 @@ section { padding: 110px 0; }
     flex-direction: column;
     align-items: center;
     gap: 0;
-    background: rgba(255, 255, 255, 0.97);
+    background: #ffffff;
     border-bottom: 1px solid var(--line);
+    box-shadow: 0 16px 30px rgba(38, 38, 38, 0.08);
   }
   .nav.open { display: flex; }
   .nav a { padding: 16px 0; width: 100%; text-align: center; }
